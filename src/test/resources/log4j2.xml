@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="OFF">
+    <properties>
+        <property name="logsDir">logs</property>
+    </properties>
+
+    <appenders>
+        <console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{DEFAULT} %-5level %c{2}.%M(%L) %msg%xEx%n"/>
+        </console>
+    </appenders>
+
+    <loggers>
+        <root level="TRACE">
+            <appender-ref ref="Console"/>
+        </root>
+    </loggers>
+</configuration>
